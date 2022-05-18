@@ -2,13 +2,12 @@
 fun main(args: Array<String>) {
     val leitor: String = readLine()!!.toString()
     //println("LEITOR VALOR: " + leitor)
-    var espaco = " "
-    var n1: String = ""
-    var n2: String = ""
+    var n1 = ""
+    var n2 = ""
    // println("VARIAVEIS LINHA 8")
     var p = leitor.indexOf(" ")
     //println(" valor de p: ${p}")
-    var x:  Int = 0
+    var x = 0
     for(i in leitor){
      //   println(" valor de x em 13: ${x}")
         x = leitor.indexOf(i,x)
