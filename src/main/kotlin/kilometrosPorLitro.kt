@@ -1,17 +1,18 @@
 
 fun main() {
-    var x: Double = readLine()!!.toDouble()
+    var x: Int = readLine()!!.toInt()
+    println("")
     var y: Double = readLine()!!.toDouble()
     var media: Double
     if ((x <= 0.0) || (y <= 0.0)) {
-        println(String.format("0.000 km/l"))
-    } else {
+        println(String.format("0.000 km/l",y))
+   } else {
         media = x/y
         println(String.format("%.3f km/l", media))
     }
-}
+}/*
 
-/*
+
 fun main() {
     try{
         var x: String = readLine()!!.toString()
@@ -28,10 +29,10 @@ fun main() {
     }
 
 }
-/*
+
 import java.util.Scanner
 
-fun main() {
+fun main(args: Array<String>) {
     var leitor = Scanner(System.`in`)
     val x: Int = leitor.nextInt()
     leitor = Scanner(System.`in`)
